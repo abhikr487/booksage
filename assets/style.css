@@ -1,0 +1,159 @@
+body {
+  background-image: url('https://images.unsplash.com/photo-1533563906091-fdfdffc3e3c4?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+}
+
+.row.flex-display {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 768px) {
+  .row.flex-display {
+    flex-wrap: wrap;
+  }
+
+  .card_container {
+    flex-basis: 100%;
+  }
+}
+
+.card_container {
+  padding: 5px;
+  margin: 0px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_container .card-title {
+  position: relative;
+  top: 100px;
+  color: #ffffff;
+  font-size: 1.0em;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.create_container {
+  border: 2px solid #000200;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 0px;
+  position: relative;
+  box-shadow: 5px 5px 5px #000c06;
+}
+
+.create_container1 {
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 2px 2px 10px #000000;
+}
+
+.dcc_compon {
+  margin: 0;
+  padding: 5px;
+  width: calc(100%-40px);
+}
+
+.fix_label {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  width: calc(100%-40px);
+}
+
+.flex-display {
+  display: flex;
+}
+
+.container-display {
+  display: flex;
+}
+
+#header {
+  padding: 20px;
+  text-align: center;
+}
+
+#refresh-data {
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+  text-transform: none;
+  font-size: 20px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+#title {
+  text-align: center;
+}
+
+#title1 {
+  text-align: center;
+}
+
+#mainContainer {
+  margin: auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Select-control,
+.Select-menu-outer,
+.Select-multi-value-wrapper,
+.select-up,
+.is-open .Select-control {
+  background-color: #000000;
+  color: white;
+
+}
+
+.Select-control {
+  border: 0.5px solid green;
+}
+
+.has-value.Select--single>.Select-control .Select-value .Select-value-label,
+.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
+  color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px !important;
+  display: block !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000 !important;
+  border-radius: 10px !important;
+  display: block !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #192444;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white !important;
+}
